@@ -13,7 +13,7 @@
     <div class="container">
         <h1>Contact Us</h1>
         <p>Fill out the form below and click the button to send us an email:</p>
-        <form action="/contact" method="POST">
+        <form id="contactForm">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name" name="name" required>
@@ -26,14 +26,14 @@
                 <label for="message">Message</label>
                 <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
             </div>
-            <a href="mailto:your_email@example.com?subject=Contact%20Form%20Submission&body=Name:%0D%0AEmail:%0D%0AMessage:">Send Email</a>
+            <button type="button" id="contactButton" class="btn btn-primary">Send Email</button>
         </form>
         <div class="container">
-             <a href="/" class="btn btn-primary my-2" id="contactButton">Home Page
-                        </a>
+            <a href="/" class="btn btn-primary my-2" id="contactButton">Return to Home Page
+            </a>
         </div>
     </div>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="/js/script.js"></script>
