@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Construct mailto link
         const subject = encodeURIComponent('Contact Form Submission');
         const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
-        const mailtoLink = `mailto:wagen00@gmail.com?subject=${subject}&body=${body}`;
+        const mailtoLink = `mailto:centralfloridawebdev@gmail.com?subject=${subject}&body=${body}`;
 
         // Open mail app
         window.location.href = mailtoLink;
